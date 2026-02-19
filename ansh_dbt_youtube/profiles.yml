@@ -1,0 +1,11 @@
+ansh_dbt_youtube:
+  outputs:
+    dev:
+      catalog: dbt_tutorial_dev
+      host: dbc-ce9fa16f-a99d.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/3909992a1da1631e
+      schema: default
+      threads: 1
+      token: dapic99ba6b0af9b299eea141aca35773624
+      type: databricks
+  target: dev
