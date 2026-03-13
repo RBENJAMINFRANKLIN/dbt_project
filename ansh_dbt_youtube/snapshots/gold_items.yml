@@ -3,7 +3,7 @@ snapshots:
     relation: ref('source_gold_items') # source('my_source', 'my_table') or ref('my_model')
     description:  markdown_string
     config:
-      database: dbt_tutorial_dev
+      database: '{{ target.catalog }}'
       schema: gold
       strategy: timestamp
       unique_key: id
