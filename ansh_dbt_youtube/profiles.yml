@@ -6,7 +6,7 @@ ansh_dbt_youtube:
       http_path: /sql/1.0/warehouses/3909992a1da1631e
       schema: default
       threads: 1
-      token: dapic99ba6b0af9b299eea141aca35773624
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
     prod:
       catalog: dbt_tutorial_prod
@@ -14,6 +14,6 @@ ansh_dbt_youtube:
       http_path: /sql/1.0/warehouses/3909992a1da1631e
       schema: default
       threads: 1
-      token: dapic99ba6b0af9b299eea141aca35773624
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
   target: dev
